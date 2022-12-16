@@ -1,0 +1,187 @@
+$cor1: rgb(196, 235, 214);
+$cor2: rgb(131, 225, 173);
+$cor3: rgb(47, 168, 102);
+$cor4: rgb(26, 91, 54);
+$cor5: rgb(6, 61, 30);
+$cor6: rgb(229, 231, 166);
+
+@font-face {
+    font-family: "bebas";
+    src: url(../fontes/BebasNeue-Regular.otf);
+}
+@font-face {
+    font-family: "droid";
+    src: url(../fontes/idroid.otf);
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+   background-color: $cor6;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    .topo{
+        font-family: bebas;
+        color: white;
+        width: 100%;
+        height: 180px;
+        background-image: linear-gradient(180deg,$cor3,$cor4);
+        display: flex;
+        flex-direction:column;
+        
+        div{
+            height: 150px;
+            display: flex;
+            flex-direction:column;
+            h1,p{
+                text-shadow: 2px 2px 0px rgba(0,0,0,0.466);
+                text-align: center;
+                margin: 30px 0px 0px 0px;    
+                   
+            }
+        }       
+        nav{ 
+            height: 17%;
+            display: flex;
+            
+                a{
+                    border-radius: 5px;
+                    transition-duration: .3s;
+                    padding: 0px 10px;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: white;
+                } 
+                a:hover{
+                    cursor: pointer; 
+                    background-color: $cor1;
+                    color: $cor4;
+                }
+        }           
+    }
+    .corpo{
+        border-radius: 0px 0px 5px 5px;
+        margin-bottom: 0px;
+        min-width: 420px;
+        max-width: 1200px;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.466);
+        article{
+            width: 100%;
+            strong{
+                color: $cor3;
+                font-weight: bold;
+            }
+            a{
+                color: $cor4;
+                background-color: $cor1;
+                text-decoration: none;
+                padding: 2px 4px;
+
+            }
+            a:hover{
+                color: $cor5;
+                background-color: $cor2; 
+            }
+            a:after{
+                content:'\0020\1f517' ;
+            }
+            
+            h2,h3{
+                margin: 20px 10px 0px 10px;
+                font-family: droid;
+                color: $cor3;
+                text-indent: 10px;
+            }
+            h3{
+                background-image: linear-gradient(90deg,$cor1,white);
+            }
+            p{
+                text-indent: 30px;
+                padding: 20px 10px ;
+                text-align: justify;
+                line-height: 1.5em;
+             }
+            .imagen{
+                width: 100%;
+                box-sizing: border-box;
+                padding: 15px;
+            }
+            .imagen-pq {
+                display: flex;
+                justify-content: center;
+                img{
+                max-width: 350px;
+                }
+            }
+            @media (min-width: 850px){
+                .imagen picture img{
+                    width: 100%;
+                }
+            }
+            @media (max-width: 850px){
+                .imagen{ 
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .vid{
+                background-color: $cor5;
+                padding: 5px;
+                position: relative;
+                padding-bottom: 56%;
+                iframe{
+                    position: absolute; 
+                    top: 2%;
+                    left: 2.5%;
+                    width: 95%;
+                    height: 95%;
+                   }
+            }
+            aside{
+                margin: 20px 10px 10px 20px;
+                border-radius: 10px;
+                background-color: $cor1 ;
+                strong,a{
+                    color: $cor4;
+                    font-weight: bold;
+                }
+                div{   
+                    height: auto; 
+                    margin-bottom: 20px;
+                    h4{
+                        text-shadow: 2px 2px 0px rgba(0,0,0,0.466);
+                        padding: 10px;
+                        background-color: $cor3;
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: white;
+                    }
+                }
+                ul{
+                    margin: 0px 20px 20px 20px;
+                    list-style-type: '\2714\0020\0020' ;
+                    list-style-position: inside;
+                    columns: 2;
+                }
+                p{
+                    padding: 0px 10px 20px 10px;
+                    font-family: "Arial, Helvetica, sans-serif" ;
+                }
+            }
+        }
+    }
+}    
+
+.rodape{
+    height: 30px;
+    width: 100%;
+    background-color: $cor4;
+    color: white;
+    text-align: center;
+}

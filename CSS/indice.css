@@ -172,7 +172,9 @@ body .corpo article aside p {
   width: 100%;
   background-color: rgb(26, 91, 54);
   color: white;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=indice.css.map */

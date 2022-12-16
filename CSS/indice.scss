@@ -184,5 +184,7 @@ body{
     width: 100%;
     background-color: $cor4;
     color: white;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

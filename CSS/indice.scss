@@ -27,10 +27,11 @@ h1,h2,p{
     margin: 0px;
 }
 body{
-   background-color: $cor6;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+    background-color: $cor6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 375px;
     .topo{
         font-family: bebas;
         color: white;
@@ -39,12 +40,10 @@ body{
         background-image: linear-gradient(180deg,$cor3,$cor4);
         display: flex;
         flex-direction:column;
-        
         .texto{
             height: 150px;
             display: flex;
             flex-direction:column;
-            
             .titulo{
                 height: 90px;
                 @include centralizar-texto;
@@ -57,13 +56,11 @@ body{
                 text-align: center;
                 text-shadow: 2px 2px 0px rgba(0,0,0,0.466);
             }
-            
-        }       
+         }       
         .menu{ 
             height: 20px;
             display: flex;
             justify-content: flex-start;
-            
                 a{
                     margin: 0px 10px;
                     border-radius: 5px;
@@ -83,13 +80,13 @@ body{
     }
     .corpo{
         border-radius: 0px 0px 5px 5px;
-        margin-bottom: 0px;
-        min-width: 420px;
-        max-width: 1200px;
+        //'margin-bottom: 0px;
+        //min-width: 375px;
+        //max-width: 1200px;
         background-color: white;
         box-shadow: 0px 0px 10px rgba(0,0,0,0.466);
         article{
-            width: 100%;
+            //width: 100%;
             strong{
                 color: $cor3;
                 font-weight: bold;
@@ -99,7 +96,6 @@ body{
                 background-color: $cor1;
                 text-decoration: none;
                 padding: 2px 4px;
-
             }
             a:hover{
                 color: $cor5;
@@ -108,7 +104,6 @@ body{
             a:after{
                 content:'\0020\1f517' ;
             }
-            
             h2,h3{
                 margin: 20px 10px 0px 10px;
                 font-family: droid;
@@ -123,7 +118,7 @@ body{
                 padding: 20px 10px ;
                 text-align: justify;
                 line-height: 1.5em;
-             }
+            }
             .imagen{
                 width: 100%;
                 box-sizing: border-box;
@@ -192,14 +187,14 @@ body{
             }
         }
     }
+    .rodape{
+        height: 50px;
+        width: 100%;
+        background-color: $cor4;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }    
 
-.rodape{
-    height: 50px;
-    width: 100%;
-    background-color: $cor4;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}

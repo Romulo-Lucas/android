@@ -12,6 +12,10 @@
   padding: 0%;
 }
 
+h1, h2, p {
+  margin: 0px;
+}
+
 body {
   background-color: rgb(229, 231, 166);
   display: flex;
@@ -27,32 +31,43 @@ body .topo {
   display: flex;
   flex-direction: column;
 }
-body .topo div {
+body .topo .texto {
   height: 150px;
   display: flex;
   flex-direction: column;
 }
-body .topo div h1, body .topo div p {
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
-  text-align: center;
-  margin: 0px;
-  padding: 30px 0px 0px 0px;
-}
-body .topo nav {
-  height: 17%;
+body .topo .texto .titulo {
+  height: 90px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-body .topo nav a {
+body .topo .texto .subtitulo {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .topo .texto h1, body .topo .texto p {
+  text-align: center;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+}
+body .topo .menu {
+  height: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+body .topo .menu a {
+  margin: 0px 10px;
   border-radius: 5px;
   transition-duration: 0.3s;
-  padding: 0px 10px;
   display: flex;
   align-items: center;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
-body .topo nav a:hover {
+body .topo .menu a:hover {
   cursor: pointer;
   background-color: rgb(196, 235, 214);
   color: rgb(26, 91, 54);

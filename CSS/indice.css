@@ -194,6 +194,7 @@ body .rodape {
   justify-content: center;
 }
 body .rodape p {
+  text-align: center;
   padding: 20px;
 }
 body .rodape p a {
